@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'bcrypt-ruby'
 
 group :production do
   gem 'mysql2'
