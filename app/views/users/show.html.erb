@@ -2,3 +2,4 @@
 <div><%= @user.name %></div>
 <div><%= @user.email %> </div>
 <div><%= @user.password_digest %> </div>
+<%= link_to "Sign out", signout_path, method: "delete" %>
