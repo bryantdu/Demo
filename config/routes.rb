@@ -1,5 +1,8 @@
 Demo::Application.routes.draw do
-  get "users/new"
-
+  
+  resources :users
+  
+  match '/signup', to: 'user#new'
+  
   root :to => "home#index"
 end
