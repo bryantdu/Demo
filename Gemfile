@@ -5,6 +5,8 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'bcrypt-ruby'
 gem 'activerecord-postgresql-adapter'
+gem 'oauth'
+gem 'twitter'
 
 group :production do
   gem 'mysql2'

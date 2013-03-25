@@ -1,17 +1,7 @@
 <div class="hero-unit">
+	<h1>Search Result</h1>
 	<div>
 		<p>
-		Search for tweets you are interested in
-		<%= form_tag users_path, :method => 'get' do %>
-			<%= text_field_tag :search, params[:search] %>
-			<%= submit_tag "Search", :name => nil %>
-		</p>
-		<% end %>
-	<div>
-
-	<div>
-		<p>
-			Recent Tweets you may be interested in:
 			<table class="table table-striped">
 				<tbody>
 					<tr>
@@ -30,4 +20,5 @@
 			</table>		
 		</p>
 	</div>
+	<%= link_to "Back", current_user, :class => "btn btn-primary" %>
 </div>
