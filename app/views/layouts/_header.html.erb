@@ -5,10 +5,10 @@
     <nav>
     <ul class="nav pull-right">
       <% if signed_in? %>
-		<li><%= link_to current_user.name, current_user %></li>
-        <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+		<li><%= link_to current_user.name, current_user,:class =>'header-font' %></li>
+        <li><%= link_to "Sign out", signout_path,:class =>'header-font', method: "delete" %></li>
       <% else %>
-        <li><%= link_to "Sign in", signin_path %></li>
+        <li><%= link_to "Sign in", signin_path,:class =>'header-font' %></li>
       <% end %>
     </ul>
     </nav>
